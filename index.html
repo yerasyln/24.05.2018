@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+	 <script>
+	  	window.addEventListener('mouseup', function(event){
+	  		if(event.target != document.getElementById('id01') && event.target.parentNode != document.getElementById('id01')){
+	  			document.getElementById('id01').style.display = 'none';
+	  		}
+	  	}); 
+	</script>
+  	<link rel = "stylesheet" href= "style.css">
+    <title>OAZIS</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body> 
+ 
+  	
+	  <div class="col-xs-12" > 
+	  		<div class="col-xs-3">
+	  		<img src="src/oasis.png" alt="Logo">
+	  		</div>
+	  		<div class="col-lg-6">
+	  			<div class= "menu"><a  href="#">Банный комплекс</a></div>
+	  			<div class="menu"><a href="#">Преимущества</a></div>
+	  			<div class="menu"><a href="#">Скидки</a></div>
+	  			<div class="menu"><a href="#">Отзывы</a></div>
+	  		</div>
+	  		<div class="col-md-3">
+		  		<div class="number">
+		  			<div>+7 747 619 46 37</div>
+		  			<div>+7 747 619 46 36</div>
+	  			</div>	
+	  		</div>
+	   </div>
+	   <div class="main">
+
+	   		<div id="id01" class="modal">	  
+			  
+			    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+			    </iframe>
+			</div>
+	   		<div class="hello">ДОБРО ПОЖАЛОВАТЬ <br>В ГОСТЕВОЙ КОМПЛЕКС</div>
+	   		<div class="oasis"><strong>OASIS</strong></div>
+	   		<div class="play"> <a  onclick="document.getElementById('id01').style.display='block'"><img src="src/play.png"></a></div>
+	   		<div class="down"><a ><img src="src/arrow.png"></a></div>
+	   </div>
+
+
+	
+  	<div class="imgCont">
+  	<img id = "bcg" src="src/bg-img.jpg"  >
+  	</div>
+	   
+	   
+  	
+  </body>
+</html>	
